@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//Вариант 15
 
 using namespace std;
 
