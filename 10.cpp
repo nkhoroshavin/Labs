@@ -3,8 +3,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int n, m;
-	int i, j;
+	int n, m, i, j;
 	cout << "Введите размер массива: ";
 	cin >> n >> m;
 	int** matr;
