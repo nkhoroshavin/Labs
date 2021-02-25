@@ -5,7 +5,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	int n, m;
 	int i, j;
-	cout << "Âåäèòå ðàçìåð ìàññèâà : ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> n >> m;
 	int** matr;
 	matr = new int* [n];
