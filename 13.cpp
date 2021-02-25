@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//8 ферзей
 using namespace std;
 int board[8][8];
 void set_queen(int i, int j) {
