@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//Р’Р°СЂРёР°РЅС‚ 15
 
 using namespace std;
 
@@ -20,45 +20,45 @@ int main() {
     cars[1].title = "BMW";
     cars[1].year =2018;
     cars[1].price = 1300000;
-    cars[1].color = "Синий";
+    cars[1].color = "РЎРёРЅРёР№";
 
     cars[2].title = "Mercedes-Benz";
     cars[2].year = 2006;
     cars[2].price = 432000;
-    cars[2].color = "Зеленый";
+    cars[2].color = "Р—РµР»РµРЅС‹Р№";
 
     cars[3].title = "Kia";
     cars[3].year = 2014;
     cars[3].price = 650000;
-    cars[3].color = "Коричневый";
+    cars[3].color = "РљРѕСЂРёС‡РЅРµРІС‹Р№";
 
     cars[4].title = "VAZ 2103";
     cars[4].year = 1980;
     cars[4].price = 25000;
-    cars[4].color = "Серый";
+    cars[4].color = "РЎРµСЂС‹Р№";
 
     cars[5].title = "Renault";
     cars[5].year = 2020;
     cars[5].price = 800000;
-    cars[5].color = "Черный";
+    cars[5].color = "Р§РµСЂРЅС‹Р№";
 
     cars[6].title = "Toyota";
     cars[6].year = 1990;
     cars[6].price = 600000;
-    cars[6].color = "Белый";
+    cars[6].color = "РљСЂР°СЃРЅС‹Р№";
 
     for (int i = 1; i <= 10; i++) {
         if (cars[i].year > 0) {
             cout << i << ")";
-            cout << "Название: " << cars[i].title << endl;
-            cout << "Год выпуска: " << cars[i].year << endl;
-            cout << "Цена: " << cars[i].price << endl;
-            cout << "Цвет: " << cars[i].color << endl << endl;
+            cout << "РќР°Р·РІР°РЅРёРµ: " << cars[i].title << endl;
+            cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: " << cars[i].year << endl;
+            cout << "Р¦РµРЅР°: " << cars[i].price << endl;
+            cout << "Р¦РІРµС‚: " << cars[i].color << endl << endl;
 
         }
     }
     int gvlim = 0;
-    cout << "Введите минимальный г.в. " << endl;
+    cout << "Р’РІРµРґРёС‚Рµ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ Рі.РІ. " << endl;
     cin >> gvlim;
     for (int i = 1; i <= 10; i++) {
         if (cars[i].year < gvlim) {
@@ -79,42 +79,42 @@ int main() {
             cars[G].year = 0;
         }
     }
-    cout << "Список автомобилей удовлетворяющих по г.в.: " << endl;
+    cout << "РЎРїРёСЃРѕРє Р°РІС‚РѕРјРѕР±РёР»РµР№ СѓРґРѕРІР»РµС‚РІРѕСЂСЏСЋС‰РёС… РїРѕ Рі.РІ.: " << endl;
     for (int i = 1; i <= 10; i++) {
         if (cars[i].year > 0) {
             cout << i << ")";
-            cout << "Название: " << cars[i].title << endl;
-            cout << "Год выпуска: " << cars[i].year << endl;
-            cout << "Цена: " << cars[i].price << endl;
-            cout << "Цвет: " << cars[i].color << endl << endl;
+            cout << "РќР°Р·РІР°РЅРёРµ: " << cars[i].title << endl;
+            cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: " << cars[i].year << endl;
+            cout << "Р¦РµРЅР°: " << cars[i].price << endl;
+            cout << "Р¦РІРµС‚: " << cars[i].color << endl << endl;
             G = 0;
 
         }
     }
-    cout << "Введите данные об одном автомобиле: " << endl;
+    cout << "Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РѕР± РѕРґРЅРѕРј Р°РІС‚РѕРјРѕР±РёР»Рµ: " << endl;
     for (int i = G ; i < G + 1; i++) {
 
-        cout << "Название: ";
+        cout << "РќР°Р·РІР°РЅРёРµ: ";
         cin >> cars[i].title;
 
-        cout << "Год выпуска: ";
+        cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: ";
         cin >> cars[i].year;
 
-        cout << "Цена: ";
+        cout << "Р¦РµРЅР°: ";
         cin >> cars[i].price;
 
-        cout << "Цвет: ";
+        cout << "Р¦РІРµС‚: ";
         cin >> cars[i].color;
         cout << endl;
     }
-    cout << "Измененный список автомобилей: " << endl;
+    cout << "РР·РјРµРЅРµРЅРЅС‹Р№ СЃРїРёСЃРѕРє Р°РІС‚РѕРјРѕР±РёР»РµР№: " << endl;
     for (int i = 1; i <= 10; i++) {
         if ((cars[i].year > 0) && (cars[i].price > 0)) {
             cout << i << ")";
-            cout << "Название: " << cars[i].title << endl;
-            cout << "Год выпуска: " << cars[i].year << endl;
-            cout << "Цена: " << cars[i].price << endl;
-            cout << "Цвет: " << cars[i].color << endl << endl;
+            cout << "РќР°Р·РІР°РЅРёРµ: " << cars[i].title << endl;
+            cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: " << cars[i].year << endl;
+            cout << "Р¦РµРЅР°: " << cars[i].price << endl;
+            cout << "Р¦РІРµС‚: " << cars[i].color << endl << endl;
             G++;
         }
     }
