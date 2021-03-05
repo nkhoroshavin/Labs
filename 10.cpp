@@ -1,11 +1,10 @@
-#include <iostream>
+#include <iostream>//15 Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚
 using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int n, m;
-	int i, j;
-	cout << "Âåäèòå ðàçìåð ìàññèâà : ";
+	int n, m, i, j;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> n >> m;
 	int** matr;
 	matr = new int* [n];
