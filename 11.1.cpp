@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//24 Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚
 #include <string>
 using namespace std;
 struct List
@@ -18,7 +18,7 @@ List* add(int size)
 	first = NULL;
 	p = new List;
 
-	cout << "Ââåäèòå ýëåìåíòû ñïèñêà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑÐ¿Ð¸ÑÐºÐ°: ";
 	cin >> p->data;
 	first = p;
 
@@ -37,7 +37,7 @@ void print(List* first)
 {
 	if (first == NULL)
 	{
-		cout << "Íîâûé ñïèñîê: " << endl;
+		cout << "ÐÐ¾Ð²Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº: " << endl;
 	}
 	else
 	{
@@ -54,7 +54,7 @@ void add(List*& first, int n)
 { 
 	List* p = first;
 	List* h = new List;
-	cout << "Ââåäèòå " << n << " ýëåìåíòà(îâ): ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ" << n << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°(Ð¾Ð²): ";
 	cin >> h->data;
 	h->next = p;
 	first = h;
@@ -75,13 +75,13 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int size;
-	cout << "Ââåäèòå ðàçìåð ñïèñêà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÑÐ¿Ð¸ÑÐºÐ°: ";
 	cin >> size;
 	List* list = add(size);
-	cout << "Ñïèñîê: ";
+	cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº: ";
 	print(list);
 	add(list, size);
-	cout << "Èçìåí¸ííûé ñïèñîê: ";
+	cout << "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº: ";
 	print(list);
 	return 0;
 }
