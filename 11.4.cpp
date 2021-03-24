@@ -11,7 +11,7 @@ queue* make_queue(int n, queue*& first, queue*& last)
 		return NULL;
 	queue* p = new queue;
 	int a;
-	cout << "Ââåäèòå ýëåìåíòû î÷åðåäè: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÑ‚Ñ‹ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: ";
 	cin >> a;
 	p->data = a;
 	p->next = NULL;
@@ -82,13 +82,13 @@ int pop(queue*& first, queue*& last)
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ââåäèòå êîë-âî ýëåìåíòîâ â ñòåêå: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² ÑÑ‚ÐµÐºÐµ: ";
 	int n;
 	int k;
 	cin >> n;
 	queue* first, * last;
 	make_queue(n, first, last);
-	cout << "Î÷åðåäü: ";
+	cout << "ÃŽÃ·Ã¥Ã°Ã¥Ã¤Ã¼: ";
 	print(last);
 	int* arr = new int[n];
 	for (int i = 0; i < n; i++)
@@ -107,7 +107,7 @@ int main()
 			push(arr[i], last);
 		}
 	}
-	cout << "Î÷åðåäü ïîñëå óäàëåíèÿ: ";
+	cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿Ð¾ÑÐ»Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ: ";
 	print(last);
 	return 0;
 }
