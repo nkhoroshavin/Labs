@@ -13,11 +13,11 @@ bool knut_morris_pratt(string str, string pod) {
 	int d = str.size();
 	int e = pod.size();
 	if (d == 0) {
-		cout << "Íåâåðíî çàäàíà ñòðîêà\n";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð·Ð°Ð´Ð°Ð½Ð° ÑÑ‚Ñ€Ð¾ÐºÐ°\n";
 	}
 	else {
 		if (e == 0) {
-			cout << "Íåâåðíî çàäàíà ïîäñòðîêà\n";
+			cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð·Ð°Ð´Ð°Ð½Ð° ÑÑ‚Ñ€Ð¾ÐºÐ°\n";
 		}
 		else {
 			j = 0;
@@ -53,9 +53,9 @@ bool boyer_moor(string str, string pod) {
 	int d = str.size();
 	int e = pod.size();
 	if (d == 0)
-		cout << "Íåâåðíî çàäàíà ñòðîêà\n";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð·Ð°Ð´Ð°Ð½Ð° ÑÑ‚Ñ€Ð¾ÐºÐ°\n";
 	else if (e == 0)
-		cout << "Íåâåðíî çàäàíà ïîäñòðîêà\n";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð·Ð°Ð´Ð°Ð½Ð° Ð¿Ð¾Ð´ÑÑ‚Ñ€Ð¾ÐºÐ°\n";
 	else
 		int  i, Pos;
 	int  bmt[256];
@@ -88,15 +88,15 @@ void boyer(info* st, string key, int n) {
 	for (int i = 0; i < n; i++) {
 		l = boyer_moor(st[i].PASS, key);
 		if (l != 0) {
-			cout << "Ýëåìåíò íàéäåí ïîä íîìåðîì: " << i << endl;
-			cout << "ÔÈÎ: " << st[i].FIO << endl;
-			cout << "Íîìåð òåëåôîíà: " << st[i].NUMBER << endl;
-			cout << "Íîìåð ïàñïîðòà: " << st[i].PASS << endl;
+			cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¿Ð¾Ð´ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð¼: " << i << endl;
+			cout << "Ð¤Ð˜Ðž: " << st[i].FIO << endl;
+			cout << "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°: " << st[i].NUMBER << endl;
+			cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°: " << st[i].PASS << endl;
 			p = 1;
 		}
 	}
 	if (p == 0) {
-		cout << "Ýëåìåíò íå íàéäåí" << endl;
+		cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½" << endl;
 	}
 }
 void knut(info* st, string key, int n) {
@@ -105,42 +105,42 @@ void knut(info* st, string key, int n) {
 	for (int i = 0; i < n; i++) {
 		l = knut_morris_pratt(st[i].PASS, key);
 		if (l != 0) {
-			cout << "Ýëåìåíò íàéäåí ïîä íîìåðîì: " << i << endl;
-			cout << "ÔÈÎ: " << st[i].FIO << endl;
-			cout << "Íîìåð òåëåôîíà: " << st[i].NUMBER << endl;
-			cout << "Íîìåð ïàñïîðòà: " << st[i].PASS << endl;
+			cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¿Ð¾Ð´ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð¼: " << i << endl;
+			cout << "Ð¤Ð˜Ðž: " << st[i].FIO << endl;
+			cout << "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°: " << st[i].NUMBER << endl;
+			cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°: " << st[i].PASS << endl;
 			p = 1;
 		}
 	}
 	if (p == 0) {
-		cout << "Ýëåìåíò íå íàéäåí" << endl;
+		cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½" << endl;
 	}
 }
 int main() {
 	int n;
 	string key;
-	cout << "Êîë-âî ýëåìåíòîâ: ";
+	cout << "ÐšÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: ";
 	cin >> n;
 	cin.ignore();
-	cout << "Êëþ÷ äëÿ ïîèñêà (ïàñïîðò) : ";
+	cout << "ÐšÐ»ÑŽÑ‡ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° (Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚) : ";
 	getline(cin, key);
 	info* st = new info[n];
 	for (int i = 0; i < n; i++) {
-		cout << "ÔÈÎ: ";
+		cout << "Ð¤Ð˜Ðž: ";
 		getline(cin, st[i].FIO);
-		cout << "Íîìåð òåëåôîíà: ";
+		cout << "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°: ";
 		getline(cin, st[i].NUMBER);
-		cout << "Íîìåð ïàñïîðòà: ";
+		cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°: ";
 		getline(cin, st[i].PASS);
 	}
 	bool a;
-	cout << "Ââåäèòå 0, åñëè õîòèòå ïðîèçâåñòè ïîèñê àëãîðèòìîì Áîéåðà-Ìóðà " << endl;
-	cout << "Ââåäèòå 1, åñëè õîòèòå ïðîèçâåñòè ïîèñê àëãîðèòìîì Êíóòà-Ìîððèñà-Ïðàòòà " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 0, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ Ð¿Ð¾Ð¸ÑÐº Ð°Ð»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼Ð¾Ð¼ Ð‘Ð¾Ð¹ÐµÑ€Ð°-ÐœÑƒÑ€Ð° " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 1, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ Ð¿Ð¾Ð¸ÑÐº Ð°Ð»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼Ð¾Ð¼ ÐšÐ½ÑƒÑ‚Ð°-ÐœÐ¾Ñ€Ñ€Ð¸ÑÐ°-ÐŸÑ€Ð°Ñ‚Ñ‚Ð° " << endl;
 	cin >> a;
 	switch (a) {
 	case 0: boyer(st, key, n); break;
 	case 1: knut(st, key, n); break;
-	default: cout << "Îøèáêà! " << endl;
+	default: cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ ! " << endl;
 	}
 	return 0;
 }
