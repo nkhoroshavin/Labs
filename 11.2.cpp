@@ -34,7 +34,7 @@ int Delete(int position)
 {
 	if (head == NULL)
 	{
-		cout << "\nÑïèñîê ïóñò\n\n";
+		cout << "\nÐ¡Ð¿Ð¸ÑÐ¾Ðº Ð¿ÑƒÑÑ‚\n\n";
 		return 0;
 	}
 	if (head == head->next)
@@ -70,10 +70,10 @@ void double_list()
 	int k, j = -1;
 	while (numbersCount <= 0)
 	{
-		cout << "Ââåäè êîëè÷åñòâî ýëåìåíòîâ â ñïèñêå: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² ÑÐ¿Ð¸ÑÐºÐµ: ";
 		cin >> numbersCount;
 	}
-	cout << "Ââåäè ýëåìåíòû ñïèñêà:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑÐ¿Ð¸ÑÐºÐ°:" << endl;
 	for (int i = 0; i < numbersCount; i++)
 	{
 		cin >> k;
@@ -82,11 +82,11 @@ void double_list()
 			j = i + 1;
 	}
 	if (j == -1)
-		cout << "×åòíûõ ýëåìåíòîâ íåò";
+		cout << "Ð§ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð½ÐµÑ‚";
 	else
 	{
 		Delete(j);
-		cout << "Èçìåíåííûé ñïèñîê: \t";
+		cout << "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº: \t";
 		Print();
 	}
 }
@@ -95,11 +95,11 @@ void double_listSTL()
 	int numbersCount = -1, j, k;
 	while (numbersCount <= 0)
 	{
-		cout << "Ââåäè êîëè÷åñòâî ýëåìåíòîâ â ñïèñêå: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² ÑÐ¿Ð¸ÑÐºÐµ: ";
 		cin >> numbersCount;
 	}
 	list<int> newList;
-	cout << "Ââåäè ýëåìåíòû ñïèñêà ÷åðåç ïðîáåë: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑÐ¿Ð¸ÑÐºÐ° Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»: ";
 	for (int i = 0; i < numbersCount; i++)
 	{
 		cin >> j;
@@ -109,7 +109,7 @@ void double_listSTL()
 	auto it = newList.begin();
 	advance(it, k);
 	newList.erase(it);
-	cout << "Èçìåíåííûé ñïèñîê: ";
+	cout << "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº: ";
 	for (auto i = newList.begin(); i != newList.end(); i++)
 		cout << *i << " ";
 }
@@ -120,8 +120,8 @@ int main()
 	int menu = -1;
 	while (menu != 1 && menu != 2 && menu != 3 && menu != 4 && menu != 5)
 	{
-		cout << "Âûáåðè âèä äèíàìè÷åñêîé ñòðóêòóðû:" << endl << "\n" << "1) Äâóñâÿçíûé ñïèñîê" << "\n" << "2) Äâóñâÿçíûé ñïèñîê stl";
-		cout << "\nÂâîä: ";
+		cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð²Ð¸Ð´ Ð´Ð¸Ð½Ð°Ð¼Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ñ‹:" << endl << "\n" << "1) Ð”Ð²ÑƒÑÐ²ÑÐ·Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº" << "\n" << "2) Ð”Ð²ÑƒÑÐ²ÑÐ·Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº stl";
+		cout << "\nÐ’Ð²Ð¾Ð´: ";
 		cin >> menu;
 	}
 	if (menu == 1) double_list();
