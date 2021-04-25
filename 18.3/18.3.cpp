@@ -11,7 +11,7 @@ void main()
 	cin >> a;
 	cin >> b;
 	cout << "Первая сумма:" << a << endl;
-	cout << "Вторая сумма денег:" << b << endl;
+	cout << "Вторая сумма:" << b << endl;
 	c = a + b;
 	d = a - b;
 	cout << "a = " << a << endl;
