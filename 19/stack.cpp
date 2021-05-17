@@ -7,7 +7,7 @@ Stack::Stack()
 }
 Stack::~Stack()
 {
-	mystack* p = new mystack;
+	stack_* p = new stack_;
 	while (top != NULL)
 	{
 		p = top;
@@ -21,16 +21,16 @@ void Stack::make(int n)
 	double a;
 	if (n <= 0)
 	{
-		cout << "Ñòåê íå ìîæåò áûòü ñîçäàí!";
+		cout << "Ã‘Ã²Ã¥Ãª Ã­Ã¥ Ã¬Ã®Ã¦Ã¥Ã² Ã¡Ã»Ã²Ã¼ Ã±Ã®Ã§Ã¤Ã Ã­!";
 	}
-	mystack* p = new mystack;
+	stack_* p = new stack_;
 	cin >> a;
 	p->data = a;
 	p->pred = NULL;
 	top = p;
 	for (int i = 2; i <= n; i++)
 	{
-		mystack* h = new mystack;
+		stack_* h = new stack_;
 		cin >> a;
 		h->data = a;
 		h->pred = top;
@@ -39,9 +39,9 @@ void Stack::make(int n)
 }
 void Stack::print()
 {
-	if (top == NULL) cout << "Ñòåê ïóñòîé" << endl;
+	if (top == NULL) cout << "Ã‘Ã²Ã¥Ãª Ã¯Ã³Ã±Ã²Ã®Ã©" << endl;
 	else {
-		mystack* p = top;
+		stack_* p = top;
 		while (p != NULL)
 		{
 			cout << p->data << " ";
@@ -52,13 +52,13 @@ void Stack::print()
 }
 void Stack::add()
 {
-	mystack* p = top;
-	mystack* q = new mystack;
+	stack_* p = top;
+	stack_* q = new stack_;
 
 	while (p != NULL)
 	{
 		if (p->data < 0) {
-			mystack* r = new mystack;
+			stack_* r = new stack_;
 			q = p->pred;
 			p->pred = r;
 			p = p->pred;
