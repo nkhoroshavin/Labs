@@ -1,24 +1,20 @@
 #include <iostream>
 #include "stack.h"
 using namespace std;
-
 int main()
 {
 	setlocale(0, "");
 	int n;
-	cout << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ â ñòåêå: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-ÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² ÑÑ‚ÐµÐºÐµ: ";
 	cin >> n;
-
 	Stack s;
-
 	s.make(n);
-
-	cout << "Ââåäåííûé ñòåê: ";
+	cout << "Ð¡Ñ‚ÐµÐº: ";
 	s.print();
 
 	s.add();
 
-	cout << "Ñòåê ïîñëå äîáàâëåíèÿ: ";
+	cout << "Ð¡Ñ‚ÐµÐº Ð¿Ð¾ÑÐ»Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ: ";
 	s.print();
 
 	return 0;
